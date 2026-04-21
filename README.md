@@ -27,26 +27,15 @@ A Wi-Fi and Bluetooth network scanner built with ESP32, LCD I2C display, and RGB
 | Breadboard | Circuit prototyping |
 | Jumper Cables | Connections |
 
-## Pin Connections
+## Pin Connections / ## RGB LED Color System
 
-| Component | Pin | ESP32 |
-|---|---|---|
-| LCD I2C | VCC | 5V |
-| LCD I2C | GND | GND |
-| LCD I2C | SDA | GPIO19 |
-| LCD I2C | SCL | GPIO18 |
-| RGB LED | R | GPIO23 |
-| RGB LED | G | GPIO22 |
+| Component | Pin | ESP32 | / | Color | Meaning |
+|---|---|---|               / |---|---|
+| LCD I2C | VCC | 5V |      / | 🔵 Blue | Scanning |
+| LCD I2C | GND | GND |     / | 🟢 Green | Strong signal (-50 dBm+) |
+| LCD I2C | SDA | GPIO19 |  / | 🩵 Cyan | Medium signal (-50 to -70 dBm) |
+| LCD I2C | SCL | GPIO18 |  / | 🔴 Red | Weak signal (-70 dBm-) |
+| RGB LED | R | GPIO23 |    / | 🟣 Purple | Bluetooth device found |
+| RGB LED | G | GPIO22 |    / | 🟡 Yellow | Refreshing |
 | RGB LED | B | GPIO21 |
 | RGB LED | COM | 3.3V |
-
-## RGB LED Color System
-
-| Color | Meaning |
-|---|---|
-| 🔵 Blue | Scanning |
-| 🟢 Green | Strong signal (-50 dBm+) |
-| 🩵 Cyan | Medium signal (-50 to -70 dBm) |
-| 🔴 Red | Weak signal (-70 dBm-) |
-| 🟣 Purple | Bluetooth device found |
-| 🟡 Yellow | Refreshing |
