@@ -48,4 +48,3 @@ A Wi-Fi and Bluetooth network scanner built with ESP32, LCD I2C display, and RGB
 | 🔴 Red | Weak signal (-70 dBm-) |
 | 🟣 Purple | Bluetooth device found |
 | 🟡 Yellow | Refreshing |
-boyle nasil duzenledim siralarini
